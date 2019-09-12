@@ -1,0 +1,21 @@
+
+<ion-content>
+  <div class="containerMain">
+    <img src="../assets/iconemw2.png" width="120" height="120" class="logo"/>
+    <h1 class="titulohome">Mega Work</h1>
+    <div class="ion-padding">
+          <ion-item>
+              <ion-label position="floating"><ion-icon name="person"slot="start"></ion-icon>Entrar:</ion-label>
+              <ion-input type="text" name="login" placeholder="Informe seu Email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label position="floating"><ion-icon name="lock" slot="start"></ion-icon>Senha:</ion-label>
+                <ion-input type="password" name="senha" placeholder="Informe sua senha"></ion-input>
+              </ion-item>
+              <ion-button color="primary" expand="block" (click)="Logar()"><ion-icon slot="start"></ion-icon>Entrar</ion-button>
+      <ion-label class="fraseslogin" [routerLink]="['/opcao-cadastro/']">Ainda não possui uma conta? Cadastre-se.</ion-label><br/><br/>
+      <ion-label class="fraseslogin">Esqueceu a senha? Recupere.</ion-label><br/>
+      <ion-label class="fraseslogin">Entrar como Pessoa Juridica.</ion-label>
+    </div>
+  </div>
+</ion-content>

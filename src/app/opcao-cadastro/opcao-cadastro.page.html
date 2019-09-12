@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons>
+        <ion-button><ion-icon name="arrow-round-back" slot="start"></ion-icon>voltar</ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+<ion-content>
+ <ion-label>Escolha a opção de cadastro:</ion-label>
+ <ion-grid>
+  <ion-row>
+    <ion-col size="6">
+        <ion-card>
+            <ion-card-content>
+                <img src="../assets/iconepessoa.png" width="90" height="90"/>
+                <p>Pessoa Física</p>
+            </ion-card-content>
+        </ion-card>
+    </ion-col>
+    <ion-col size="6">
+        <ion-card [routerLink]="['/cadastro-pj/']">
+            <ion-card-content>
+                <img src="../assets/iconejuridico.png" width="90" height="90"/>
+                <p>Pessoa Jurídica</p>
+            </ion-card-content>
+        </ion-card>
+    </ion-col>
+  </ion-row>
+ </ion-grid>
+
+</ion-content>

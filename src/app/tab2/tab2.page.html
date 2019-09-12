@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="list-box"></ion-icon> Curriculo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <form #form="ngForm" (ngSubmit)="salvar(form)">
+      <ion-item>
+        <ion-label position="floating">Nome:</ion-label>
+        <ion-input name="nomeCurriculo" ngModel></ion-input>
+      </ion-item>
+      <h3>Dados Pessoais:</h3>
+      <ion-item>
+        <ion-label position="floating">Cidade:</ion-label>
+        <ion-input name="cidadeCurrilo" ngModel></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Bairro:</ion-label>
+        <ion-input name="bairroCurrilo" ngModel></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Naturalidade:</ion-label>
+        <ion-input name="naturalCurrilo" ngModel></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label>Estado Civil:</ion-label>
+          <ion-select placeholder="Selecione...">
+            <ion-select-option value="s">Solteiro</ion-select-option>
+            <ion-select-option value="c">Casado</ion-select-option>
+          </ion-select>
+        </ion-item>
+      <h5>Data de Nascimento:</h5>
+      <ion-item>
+          <ion-label position="floating">Dia:</ion-label>
+          <ion-input type="text" name="diaCurriculo" maxlength="2"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="floating">Mês:</ion-label>
+          <ion-input type="text" name="mesCurriculo" maxlength="2"></ion-input>
+      </ion-item>
+      <ion-item>
+          <ion-label position="floating">Ano:</ion-label>
+          <ion-input type="text" name="anoCurriculo" maxlength="4"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Escolaridade/Formação:</ion-label>
+        <ion-textarea name="escolaCurriculo"></ion-textarea>
+      </ion-item>
+      <ion-item>
+          <ion-label position="floating">Objetivos:</ion-label>
+          <ion-textarea name="objetivosCurriculo"></ion-textarea>
+        </ion-item>
+        <ion-item>
+            <ion-label position="floating">Cursos:</ion-label>
+            <ion-textarea name="cursosCurriculo"></ion-textarea>
+          </ion-item>
+      <ion-item>
+        <ion-label position="floating">Experiência profissional:</ion-label>
+        <ion-textarea name="experienciaCurriculo"></ion-textarea>
+      </ion-item>
+      <ion-button  type="submit"class="ion-margin-top" expand="block">Salvar</ion-button>
+    </form>
+  </div>
+</ion-content>
